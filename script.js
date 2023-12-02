@@ -12,7 +12,7 @@ function updateClock() {
   // alarms list
   const alarmsList = document.getElementById('alarms-list');
 
-  // Check if any alarms are set and trigger the alarm sound
+  // Checking if any alarms are set and trigger the alarm sound
   const alarmItems = alarmsList.querySelectorAll('div');
   alarmItems.forEach(alarm => {
     if (alarm.textContent.includes(currentTime)) {
@@ -23,11 +23,11 @@ function updateClock() {
   });
 }
 
-// Update the clock every second
+// Updating the clock every second
 setInterval(updateClock, 1000);
 updateClock();
 
-// set the alarm
+// setting the alarm
 function setAlarm() {
   const alarmTimeInput = document.getElementById('alarm-time');
   const alarmTime = alarmTimeInput.value;
